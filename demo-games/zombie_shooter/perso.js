@@ -31,22 +31,22 @@ function persoBehavior(){
     playerRotation = 180; 
     player.mirrorX(1);
     player.changeAnimation('walkLeft');
-    player.position.x -= 1;
+    player.position.x -= 2;
     }
     else if(keyDown(RIGHT_ARROW)){
     playerRotation = 0;
     player.changeAnimation('walkRight');
-    player.position.x += 1;
+    player.position.x += 2;
     }
     else if(keyDown(DOWN_ARROW)){
     playerRotation = 90;
     player.changeAnimation('walkBottom');
-    player.position.y += 1;
+    player.position.y += 2;
     }
     else if(keyDown(UP_ARROW)){
     playerRotation = 270;
     player.changeAnimation('walkTop');
-    player.position.y -= 1;
+    player.position.y -= 2;
     }else{
     player.changeAnimation('idle');
     }
